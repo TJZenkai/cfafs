@@ -26,13 +26,8 @@ connect();
 <script src="js/functions.js"></script>
 
 
-
-
  <link href="css/bootstrap.min.css" rel="stylesheet"> 
-
  <link href="css/morphbutton.css" rel="stylesheet"> 
-
-
  <link href="css/demo.css" rel="stylesheet"> 
 
 

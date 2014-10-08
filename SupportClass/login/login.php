@@ -4,8 +4,8 @@ include("../database.php");
 	
 	$username = getUsername();
 	$password = getPassword();
-	$hostname = "localhost"//getHostname();
-	$dataname = getDataname();
+	$hostname = "localhost";//getHostname();
+	$dataName = getDataname();
 	
 	
 	$dbhandle = mysql_connect($hostname, $username, $password) or die("Could not connect to database");

@@ -3,7 +3,7 @@
 
 
 $hostname = "localhost";
-$dataname = "u908657796_alz";
+$dataname = "login";
 $password = "root";
 $username = "root";
 
