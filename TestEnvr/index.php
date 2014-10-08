@@ -19,19 +19,79 @@ connect();
 <link rel="shortcut icon" type="image/x-icon" href="css/images/head.png">
 <link rel="stylesheet" href="css/style.css" type="text/css" media="all">
 <link rel="stylesheet" href="css/flexslider.css" type="text/css" media="all">
-<script src="js/jquery-1.7.2.min.js"></script>
+<script src="js/jquery.js"></script>
+<script src="js/jquery.morphbutton.js"></script>
 <!--[if lt IE 9]><script src="js/modernizr.custom.js"></script><![endif]-->
 <script src="js/jquery.flexslider-min.js"></script>
 <script src="js/functions.js"></script>
+
+
+
+
+ <link href="css/bootstrap.min.css" rel="stylesheet"> 
+
+ <link href="css/morphbutton.css" rel="stylesheet"> 
+
+
+ <link href="css/demo.css" rel="stylesheet"> 
+
+
+
+
+
+
+
+
+
 </head>
+
+
 <body>
+
+
+
+<div class="container text-center">
+         
+      <p>
+        <a href="#" class="morphbutton big-button" data-target="#test">Sign up</a>
+      </p>
+
+    </div>
+
+
+    <div id="test" class="morphbutton-content">
+      <div class="box">
+        <h2>Sign up</h2>
+        <button type="button" class="morphbutton-close"><span class="glyphicon glyphicon-remove"></span></button>
+        <form class="form-horizontal morphbutton-cascade" role="form">
+          <input type="text" placeholder="username">
+          <input type="password" placeholder="password">
+          <input type="submit" value="Sign up">
+        </form>
+      </div>
+    </div>
+
+
+
+    
+ 
+
+
+
+
+
+
+
+
+
+
 <!-- wrapper -->
 <div id="wrapper">
   <!-- header -->
   <header>
     <!-- shell -->
     <div class="shell">
-      <h1 id="logo"><a href="#">Particular==</a></h1>
+      <h1 id="logo"><a href="#" style="position: relative;bottom: 30px;">Particular==</a></h1>
       <!-- navigation -->
       <nav id="navigation"> <a href="#" class="active" >Home</a> <a href="#">Furniture</a> <a href="#">Electronics</a> <a href="#">Other</a> <a href="#">FAQ</a> </nav>
       <!-- end of navigation -->
@@ -128,13 +188,7 @@ connect();
   <!-- end of slider -->
             
 
-            
-
-           
-  
-  
-  
-  
+   
 
   <BR><BR><BR><BR> <h2>Other Stuff</h2>
   
