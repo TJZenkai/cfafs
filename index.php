@@ -19,21 +19,88 @@ connect();
 <link rel="shortcut icon" type="image/x-icon" href="css/images/head.png">
 <link rel="stylesheet" href="css/style.css" type="text/css" media="all">
 <link rel="stylesheet" href="css/flexslider.css" type="text/css" media="all">
-<script src="js/jquery-1.7.2.min.js"></script>
+<script src="js/jquery.js"></script>
+<script src="js/jquery.morphbutton.js"></script>
 <!--[if lt IE 9]><script src="js/modernizr.custom.js"></script><![endif]-->
 <script src="js/jquery.flexslider-min.js"></script>
 <script src="js/functions.js"></script>
+
+
+
+
+ <link href="css/bootstrap.min.css" rel="stylesheet"> 
+
+ <link href="css/morphbutton.css" rel="stylesheet"> 
+
+
+ <link href="css/demo.css" rel="stylesheet"> 
+
+
+
+
+
 </head>
+
+
 <body>
+
+
+<!--
+<div class="container text-center">
+         
+      <p>
+        <a href="#" class="morphbutton big-button" data-target="#test">Sign in</a>
+      </p>
+
+    </div>-->
+
+
+    <div id="test" class="morphbutton-content">
+      <div class="box">
+        <h2>Sign in</h2>
+        <button type="button" class="morphbutton-close"><span class="glyphicon glyphicon-remove"></span></button>
+        <form action="supportclass/login/login.php" method="POST" class="form-horizontal morphbutton-cascade" role="form">
+          <input type="text" placeholder="email" name = "email">
+          <input type="password" placeholder="password" name = "pass">
+          <input type="submit" value="Sign in">
+        </form>
+      </div>
+    </div>
+
+	
+    <div id="test2" class="morphbutton-content">
+      <div class="box">
+        <h2>Sign up</h2>
+        <button type="button" class="morphbutton-close"><span class="glyphicon glyphicon-remove"></span></button>
+        <form class="form-horizontal morphbutton-cascade" role="form">
+          <input type="text" placeholder="first part of ucla email EX: joebruin@ucla.edu" >
+          <input type="text" placeholder="password">
+          <input type="text" placeholder="confirm password">
+          <input type="submit" value="Sign up">
+        </form>
+      </div>
+    </div>
+
+
+
 <!-- wrapper -->
 <div id="wrapper">
   <!-- header -->
   <header>
     <!-- shell -->
     <div class="shell">
-      <h1 id="logo"><a href="#">Particular==</a></h1>
+      <h1 id="logo"><a href="#" style="position: relative;bottom: 28px;right: 250px;"></a></h1>
       <!-- navigation -->
-      <nav id="navigation"> <a href="#" class="active" >Home</a> <a href="#">Furniture</a> <a href="#">Electronics</a> <a href="#">Other</a> <a href="#">FAQ</a> </nav>
+      <nav id="navigation"> 
+      <a href="#" class="active" >Home</a> 
+      <a href="#">Furniture</a> 
+      <a href="#">Electronics</a> 
+      <a href="#">Other</a> 
+      <a href="#">FAQ</a> 
+      <a href="#" class="morphbutton big-button btn btn-info" data-target="#test" style="padding: 10px;color: #6495ED;">Sign in</a>
+      <a href="#" class="morphbutton big-button btn btn-info" data-target="#test2" style="padding: 10px;color: #6495ED;">Sign up</a>
+
+      </nav>
       <!-- end of navigation -->
     </div>
     <!-- end of shell -->
@@ -55,6 +122,7 @@ connect();
           <ul class="slides">
           
 		  <?php
+		  
    		    $furnitureArray = array();
 			$furnitureArray = getFurnitureArray();
 			
@@ -74,6 +142,7 @@ connect();
 			
  			echo "</p><a href='#' class='slider-btn'>Check it Out </a> </div></li>";
 			}
+			
 			?>
           
           </ul>
@@ -128,13 +197,7 @@ connect();
   <!-- end of slider -->
             
 
-            
-
-           
-  
-  
-  
-  
+   
 
   <BR><BR><BR><BR> <h2>Other Stuff</h2>
   
@@ -209,7 +272,13 @@ connect();
   <div class="shell">
     <!-- footer-top -->
     <div class="footer-top">
-      <nav class="footer-nav"> <a href="#">Home</a> <a href="#">Furniture</a> <a href="#">Electronics</a> <a href="#">Other</a> <a href="#">FAQ</a>  </nav>
+      <nav class="footer-nav"> 
+      <a href="#">Home</a>
+       <a href="#">Furniture</a> 
+       <a href="#">Electronics</a> 
+       <a href="#">Other</a> 
+       <a href="#">FAQ</a>
+       </nav>
       <div class="footer-logo"><a href="#">Particular</a></div>
     </div>
     <!-- end of footer-top -->

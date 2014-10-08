@@ -1,13 +1,18 @@
 <?php
-	$username = "root";
-	$password = "root";
-	$hostname = "localhost";
+include("../database.php");
+
+	
+	$username = getUsername();
+	$password = getPassword();
+	$hostname = "localhost"//getHostname();
+	$dataname = getDataname();
+	
 	
 	$dbhandle = mysql_connect($hostname, $username, $password) or die("Could not connect to database");
 	
-	$selected = mysql_select_db("login", $dbhandle);
+	$selected = mysql_select_db($dataName, $dbhandle);
 	
-	$myusername = $_POST['user'];
+	$myusername = $_POST['email'];
 	$mypassword = $_POST['pass'];
 	
 	$myusername = stripslashes($myusername);

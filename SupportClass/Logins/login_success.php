@@ -1,6 +1,7 @@
 <?php
 	if(!isset($_COOKIE['loggedin'])){
-		header("location:index.php");
+	echo '<meta http-equiv="refresh" content="0; url=http://collegefafs.com/" />';
+
 	}
 ?>
 

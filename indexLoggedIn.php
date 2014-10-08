@@ -39,10 +39,6 @@ connect();
 
 
 
-
-
-
-
 </head>
 
 
@@ -63,9 +59,9 @@ connect();
       <div class="box">
         <h2>Sign in</h2>
         <button type="button" class="morphbutton-close"><span class="glyphicon glyphicon-remove"></span></button>
-        <form class="form-horizontal morphbutton-cascade" role="form">
-          <input type="text" placeholder="email">
-          <input type="password" placeholder="password">
+        <form action="supportclass/login/login.php" method="POST" class="form-horizontal morphbutton-cascade" role="form">
+          <input type="text" placeholder="email" name = "email">
+          <input type="password" placeholder="password" name = "pass">
           <input type="submit" value="Sign in">
         </form>
       </div>
@@ -77,8 +73,9 @@ connect();
         <h2>Sign up</h2>
         <button type="button" class="morphbutton-close"><span class="glyphicon glyphicon-remove"></span></button>
         <form class="form-horizontal morphbutton-cascade" role="form">
-          <input type="text" placeholder="email">
-          <input type="password" placeholder="password">
+          <input type="text" placeholder="first part of ucla email EX: joebruin@ucla.edu" >
+          <input type="text" placeholder="password">
+          <input type="text" placeholder="confirm password">
           <input type="submit" value="Sign up">
         </form>
       </div>

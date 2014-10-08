@@ -29,6 +29,27 @@ if (mysqli_connect_errno()) {
 
 }
 
+function getUsername()
+{
+	global $username;
+	return $username;	
+}
+
+function getDataname()
+{	global $dataname;
+	return $dataname;	
+}
+
+function getPassword()
+{	global $password;
+	return	$password;
+}
+
+//function getHostname()
+//{
+	//return $hostname;
+//}
+
 
 
 
