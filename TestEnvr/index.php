@@ -53,7 +53,7 @@ connect();
 <div class="container text-center">
          
       <p>
-        <a href="#" class="morphbutton big-button" data-target="#test">Sign up</a>
+        <a href="#" class="morphbutton big-button" data-target="#test">Sign in</a>
       </p>
 
     </div>-->
@@ -61,24 +61,28 @@ connect();
 
     <div id="test" class="morphbutton-content">
       <div class="box">
+        <h2>Sign in</h2>
+        <button type="button" class="morphbutton-close"><span class="glyphicon glyphicon-remove"></span></button>
+        <form class="form-horizontal morphbutton-cascade" role="form">
+          <input type="text" placeholder="email">
+          <input type="password" placeholder="password">
+          <input type="submit" value="Sign in">
+        </form>
+      </div>
+    </div>
+
+	
+    <div id="test2" class="morphbutton-content">
+      <div class="box">
         <h2>Sign up</h2>
         <button type="button" class="morphbutton-close"><span class="glyphicon glyphicon-remove"></span></button>
         <form class="form-horizontal morphbutton-cascade" role="form">
-          <input type="text" placeholder="username">
+          <input type="text" placeholder="email">
           <input type="password" placeholder="password">
           <input type="submit" value="Sign up">
         </form>
       </div>
     </div>
-
-
-
-
-
-
-
-
-
 
 
 
@@ -96,7 +100,9 @@ connect();
       <a href="#">Electronics</a> 
       <a href="#">Other</a> 
       <a href="#">FAQ</a> 
-      <a href="#" class="morphbutton big-button btn btn-info" data-target="#test" style="padding: 10px;color: #006e86;">Sign up</a>
+      <a href="#" class="morphbutton big-button btn btn-info" data-target="#test" style="padding: 10px;color: #6495ED;">Sign in</a>
+      <a href="#" class="morphbutton big-button btn btn-info" data-target="#test2" style="padding: 10px;color: #6495ED;">Sign up</a>
+
       </nav>
       <!-- end of navigation -->
     </div>
