@@ -49,14 +49,14 @@ connect();
 <body>
 
 
-
+<!--
 <div class="container text-center">
          
       <p>
         <a href="#" class="morphbutton big-button" data-target="#test">Sign up</a>
       </p>
 
-    </div>
+    </div>-->
 
 
     <div id="test" class="morphbutton-content">
@@ -73,9 +73,6 @@ connect();
 
 
 
-    
- 
-
 
 
 
@@ -91,9 +88,16 @@ connect();
   <header>
     <!-- shell -->
     <div class="shell">
-      <h1 id="logo"><a href="#" style="position: relative;bottom: 30px;">Particular==</a></h1>
+      <h1 id="logo"><a href="#" style="position: relative;bottom: 28px;right: 250px;"></a></h1>
       <!-- navigation -->
-      <nav id="navigation"> <a href="#" class="active" >Home</a> <a href="#">Furniture</a> <a href="#">Electronics</a> <a href="#">Other</a> <a href="#">FAQ</a> </nav>
+      <nav id="navigation"> 
+      <a href="#" class="active" >Home</a> 
+      <a href="#">Furniture</a> 
+      <a href="#">Electronics</a> 
+      <a href="#">Other</a> 
+      <a href="#">FAQ</a> 
+      <a href="#" class="morphbutton big-button btn btn-info" data-target="#test" style="padding: 10px;color: #006e86;">Sign up</a>
+      </nav>
       <!-- end of navigation -->
     </div>
     <!-- end of shell -->
@@ -115,6 +119,7 @@ connect();
           <ul class="slides">
           
 		  <?php
+		  
    		    $furnitureArray = array();
 			$furnitureArray = getFurnitureArray();
 			
@@ -134,6 +139,7 @@ connect();
 			
  			echo "</p><a href='#' class='slider-btn'>Check it Out </a> </div></li>";
 			}
+			
 			?>
           
           </ul>
@@ -263,7 +269,13 @@ connect();
   <div class="shell">
     <!-- footer-top -->
     <div class="footer-top">
-      <nav class="footer-nav"> <a href="#">Home</a> <a href="#">Furniture</a> <a href="#">Electronics</a> <a href="#">Other</a> <a href="#">FAQ</a>  </nav>
+      <nav class="footer-nav"> 
+      <a href="#">Home</a>
+       <a href="#">Furniture</a> 
+       <a href="#">Electronics</a> 
+       <a href="#">Other</a> 
+       <a href="#">FAQ</a>
+       </nav>
       <div class="footer-logo"><a href="#">Particular</a></div>
     </div>
     <!-- end of footer-top -->
