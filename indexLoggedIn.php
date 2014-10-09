@@ -4,13 +4,22 @@
 include("SupportClass/Database.php");
 include("SupportClass/SupportSlider.php");
 
-$listCol="helloWorld";
-$tableName="helloTable";
+//$listCol="helloWorld";
+//$tableName="helloTable";
 connect();
 
 
 
 ?>
+
+<!-- other shit-->
+<?php
+	//$seconds = -10 + time();
+	//setcookie(loggedin, date("F jS - g:i a"), $seconds);
+	//header("../../index.php");
+?>
+
+
 
 <html lang="en">
 <head>
@@ -31,7 +40,6 @@ connect();
  <link href="css/bootstrap.min.css" rel="stylesheet"> 
 
  <link href="css/morphbutton.css" rel="stylesheet"> 
-
 
  <link href="css/demo.css" rel="stylesheet"> 
 
@@ -55,14 +63,16 @@ connect();
     </div>-->
 
 
+
+<!-- here is the log out section -->
+
     <div id="test" class="morphbutton-content">
       <div class="box">
-        <h2>Sign in</h2>
+        <h2>Sign out?</h2>
         <button type="button" class="morphbutton-close"><span class="glyphicon glyphicon-remove"></span></button>
-        <form action="supportclass/login/login.php" method="POST" class="form-horizontal morphbutton-cascade" role="form">
-          <input type="text" placeholder="email" name = "email">
-          <input type="password" placeholder="password" name = "pass">
-          <input type="submit" value="Sign in">
+        <form action="supportclass/login/logout.php" method="POST" class="form-horizontal morphbutton-cascade" role="form">
+          <h2> </h2>
+          <input type="submit" value="Sign out">
         </form>
       </div>
     </div>
@@ -97,7 +107,7 @@ connect();
       <a href="#">Electronics</a> 
       <a href="#">Other</a> 
       <a href="#">FAQ</a> 
-      <a href="#" class="morphbutton big-button btn btn-info" data-target="#test" style="padding: 10px;color: #6495ED;">Sign in</a>
+      <a href="#" class="morphbutton big-button btn btn-info" data-target="#test" style="padding: 10px;color: #6495ED;">Sign out</a>
       <a href="#" class="morphbutton big-button btn btn-info" data-target="#test2" style="padding: 10px;color: #6495ED;">Sign up</a>
 
       </nav>

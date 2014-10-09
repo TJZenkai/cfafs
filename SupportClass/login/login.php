@@ -27,7 +27,7 @@ include("../database.php");
 	if($count==1){
 		$seconds = 5 + time();
 		setcookie(loggedin, date("F jS - g:i a"), $seconds);
-		header("location:login_success.php");
+		header("location:../../indexLoggedIn.php");
 	}else{
 		echo 'Incorrect Username or Password';
 	}

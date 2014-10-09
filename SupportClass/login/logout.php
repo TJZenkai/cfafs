@@ -1,5 +1,9 @@
 <?php
+
+//TAEJA DO SHIT HERE
+
 	//$seconds = -10 + time();
 	//setcookie(loggedin, date("F jS - g:i a"), $seconds);
-	header("../../index.php");
+	header("location:../../index.php");
 ?>
+
