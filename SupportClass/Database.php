@@ -45,10 +45,10 @@ function getPassword()
 	return	$password;
 }
 
-//function getHostname()
-//{
-	//return $hostname;
-//}
+function getHost()
+{
+	return $hostname;
+}
 
 
 
