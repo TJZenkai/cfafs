@@ -77,20 +77,18 @@ connect();
       </div>
     </div>
 
-	
-    <div id="test2" class="morphbutton-content">
+	 <div id="test2" class="morphbutton-content">
       <div class="box">
         <h2>Sign up</h2>
         <button type="button" class="morphbutton-close"><span class="glyphicon glyphicon-remove"></span></button>
         <form class="form-horizontal morphbutton-cascade" role="form">
-          <input type="text" placeholder="first part of ucla email EX: joebruin@ucla.edu" >
+          <input type="text" placeholder="first part of ucla email EX: joebruin" style="width: 300px;"> @ucla.edu
           <input type="text" placeholder="password">
           <input type="text" placeholder="confirm password">
           <input type="submit" value="Sign up">
         </form>
       </div>
     </div>
-
 
 
 <!-- wrapper -->
