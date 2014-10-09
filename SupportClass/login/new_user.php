@@ -1,4 +1,5 @@
 <?php
+// this make s the username
 
 include("../database.php");
 	$username = getUsername();
